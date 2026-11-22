@@ -1,0 +1,8 @@
+﻿# Streamlit Community Cloud requirements (CPU-only PyTorch keeps the build small)
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy>=1.23
+torch>=2.1
+skyfield>=1.45
+onnx>=1.14
+streamlit>=1.36
+pandas>=1.5
