@@ -52,8 +52,12 @@ CSS = """
 .block-container {padding-top: 3.4rem; padding-bottom: 3rem; max-width: 1400px;}
 [data-testid="stMetric"] {background: #121A2B; border: 1px solid #22304A; border-radius: 10px; padding: 12px 14px;}
 [data-testid="stMetricLabel"] p {font-size: .74rem; text-transform: uppercase; letter-spacing: .05em; color: #9AA6B8;}
+[data-testid="stMetricLabel"], [data-testid="stMetricLabel"] *, [data-testid="stMetricDelta"], [data-testid="stMetricDelta"] * {
+  white-space: normal !important; overflow: visible !important; text-overflow: clip !important;}
 [data-testid="stMetricValue"] {font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-variant-numeric: tabular-nums; font-size: 1.65rem;}
+  font-variant-numeric: tabular-nums; font-size: clamp(1.1rem, 1.75vw, 1.65rem);}
+[data-testid="stMetricValue"], [data-testid="stMetricValue"] * {white-space: normal !important; overflow: visible !important;
+  text-overflow: clip !important;}
 [data-testid="stMetricDelta"] {font-size: .8rem;}
 .argus-top {display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap;}
 .argus-top > div:first-child {flex: 1 1 560px;} .argus-top .status {flex: 0 0 auto;}
