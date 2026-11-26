@@ -22,6 +22,7 @@ python argus_cli.py build-dataset         # (re)build the real Sentinel-2 traini
 python argus_cli.py dashboard             # Streamlit app
 python argus_cli.py --fast                # quick smoke run on the built-in fire-season scenario
 python argus_cli.py run --live --deterministic   # bit-reproducible numbers
+python make_snapshot.py                   # save the reported run; the dashboard opens it instantly
 ```
 
 You can run it from any folder. Only **NumPy** is required. Every other dependency has a fallback, and no API keys are needed:

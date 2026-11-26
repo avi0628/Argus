@@ -4,5 +4,5 @@ numpy>=1.23
 torch>=2.1
 skyfield>=1.45
 onnx>=1.14
-streamlit>=1.36
+streamlit>=1.67
 pandas>=1.5
